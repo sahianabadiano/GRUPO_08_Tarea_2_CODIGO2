@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>DOM Nodes</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/ocho.png" rel="icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: BizPage - v5.8.0
+  * Template URL: https://bootstrapmade.com/bizpage-bootstrap-business-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center ">
+    <div class="container-fluid">
+
+      <div class="row justify-content-center align-items-center">
+        <div class="col-xl-11 d-flex align-items-center justify-content-between">
+          <h1 class="logo"><a href="index.html"><img src="assets/img/grupo8.png"></a></h1>
+          <!-- Uncomment below if you prefer to use an image logo -->
+          <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+          <nav id="navbar" class="navbar">
+            <ul>
+              
+              <!--<li><a class="nav-link scrollto " href="index.html">Inicio</a></li>
+              <li><a class="nav-link scrollto" href="#blog">Conceptos</a></li>
+              <li><a class="nav-link scrollto" href="#servicesE">Ejemplos</a></li>-->
+              <li class="dropdown"><a href="#"><span>Nodos DOM</span> <i class="bi bi-chevron-down"></i></a>
+                <ul>
+                  <li><a href="#blog">Conceptos</a></li>
+                  <li><a href="#about">Ejemplos</a></li>
+                </ul>
+              </li>
+              <li class="active" style="padding-top: 2%;"><span><a href="index.html"><i class="bi bi-house-fill" style="font-size: 35px;"></i></a></span></li>
+            </ul>
+
+            <i class="bi bi-list mobile-nav-toggle"></i>
+          </nav><!-- .navbar -->
+        </div>
+      </div>
+
+    </div>
+  </header><!-- End Header -->
+
+  <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+
+        
+        <h2>Nodos JavaScript HTML DOM</h2>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+
+    <!-- ======= Blog Section ======= -->
+    <section id="blog" class="blog">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+
+          <div class="col-lg-10 entries">
+
+            <article class="entry">
+
+              <div class="entry-img">
+                <img src="assets/img/imagen10.jpg" alt="" class="img-fluid" style="border-radius: 6px; width:100%">
+              </div>
+
+              <h2 class="entry-title">
+                <a href="#">Creación de nuevos elementos HTML (nodos)</a></h2><br>
+
+              <div class="entry-meta">
+                <ul>
+                  <li class="d-flex align-items-center"><i class="bi bi-person"></i> <a href="#">Grupo 8</a></li>
+                  <li class="d-flex align-items-center"><i class="bi bi-clock"></i> <a href="#"><time datetime="2020-01-01">Diciembre, 2021</time></a></li>
+                </ul>
+              </div>
+
+              <div class="entry-content">
+                <h5>Para agregar un nuevo elemento al DOM HTML, primero debe crear el elemento (nodo de elemento) y luego agregarlo a un elemento existente.</h5>
+              </div>
+
+            </article><!-- End blog entry -->
+
+            <article class="entry">
+
+              <div class="entry-img">
+                <img src="" alt="" class="img-fluid" style="border-radius: 6px;">
+              </div>
+
+              <h2 class="entry-title">
+                <a href="#">Eliminar elementos HTML existentes</a></h2><br>
+
+              <div class="entry-meta">
+                <ul>
+                  <li class="d-flex align-items-center"><i class="bi bi-person"></i> <a href="#">Grupo 8</a></li>
+                  <li class="d-flex align-items-center"><i class="bi bi-clock"></i> <a href="#"><time datetime="2020-01-01">Diciembre, 2021</time></a></li>
+                </ul>
+              </div>
+
+              <div class="entry-content">
+                <h5>Para eliminar un elemento HTML, use el remove().</h5>
+              </div>
+
+            </article><!-- End blog entry -->
+
+            <article class="entry">
+
+              <div class="entry-img">
+                <img src="" alt="" class="img-fluid" style="border-radius: 6px;">
+              </div>
+
+              <h2 class="entry-title">
+                <a href="#">Creando nuevos elementos HTML - insertBefore ()</a></h2><br>
+
+              <div class="entry-meta">
+                <ul>
+                  <li class="d-flex align-items-center"><i class="bi bi-person"></i> <a href="#">Grupo 8</a></li>
+                  <li class="d-flex align-items-center"><i class="bi bi-clock"></i> <a href="#"><time datetime="2020-01-01">Diciembre, 2021</time></a></li>
+                </ul>
+              </div>
+
+              <div class="entry-content">
+                <h5>El appendChild()método del ejemplo anterior agregó el nuevo elemento como último hijo del padre.</h5>
+              </div>
+
+            </article><!-- End blog entry -->
+
+            <article class="entry">
+
+              <div class="entry-img">
+                <img src="" alt="" class="img-fluid" style="border-radius: 6px;">
+              </div>
+
+              <h2 class="entry-title">
+                <a href="#">Eliminar un nodo secundario</a></h2><br>
+
+              <div class="entry-meta">
+                <ul>
+                  <li class="d-flex align-items-center"><i class="bi bi-person"></i> <a href="#">Grupo 8</a></li>
+                  <li class="d-flex align-items-center"><i class="bi bi-clock"></i> <a href="#"><time datetime="2020-01-01">Diciembre, 2021</time></a></li>
+                </ul>
+              </div>
+
+              <div class="entry-content">
+                <h5>Para los navegadores que no admiten el remove()método, debe encontrar el nodo principal para eliminar un elemento.</h5>
+              </div>
+
+            </article><!-- End blog entry -->
+
+
+            <article class="entry">
+
+              <div class="entry-img">
+                <img src="" alt="" class="img-fluid">
+              </div>
+
+              <h2 class="entry-title">
+                <a href="#">Reemplazo de elementos HTML</a>
+              </h2><br>
+
+              <div class="entry-meta">
+                <ul>
+                  <li class="d-flex align-items-center"><i class="bi bi-person"></i> <a href="#">Grupo 8</a></li>
+                  <li class="d-flex align-items-center"><i class="bi bi-clock"></i> <a href="#"><time datetime="2020-01-01">Diciembre, 2021</time></a></li>
+                </ul>
+              </div>
+
+              <div class="entry-content">
+                <div>
+                  <p>Para reemplazar un elemento en el DOM HTML, use el replaceChild()método.</p>
+                </div>
+                <div class="read-more">
+                  <a href="#featured-services">Leer más</a>
+                </div>
+              </div>
+
+            </article><!-- End blog entry -->
+
+          </div><!-- End blog entries list -->
+        </div>
+      </div>
+    </section><!-- End Blog Section -->
+
+
+   
+  <main id="main">
+
+    <!-- ======= About Us Section ======= -->
+    <section id="about">
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h3>Creación de nuevos elementos HTML (nodos)</h3>
+          <p>Para agregar un nuevo elemento al DOM HTML, primero debe crear el elemento (nodo de elemento) y luego agregarlo a un elemento existente.</p>
+        </header>
+
+        <div class="row about-cols">
+          <div class="bg-info"><br>
+            <table class="table">
+              <thead class="thead-dark" >
+                <tr class="table bg-light">
+                  <th scope="col" class="text-secondary">Ejemplo</th>
+                </tr>
+              </thead>
+              <tbody >
+                <tr>
+                  <th class=" bg-light"><strong>
+                    <div class="w3-code notranslate htmlHigh">
+                      &lt;div id=&quot;div1&quot;&gt;<br>
+                      &nbsp;
+                      &lt;p id=&quot;p1&quot;&gt;This is a paragraph.&lt;/p&gt;<br>
+                      &nbsp;
+                      &lt;p id=&quot;p2&quot;&gt;This is another paragraph.&lt;/p&gt;<br>
+                      &lt;/div&gt;<br><br>&lt;script&gt;<br>
+                      const para = document.createElement(&quot;p&quot;);<br>
+                      const node = document.createTextNode(&quot;This is new.&quot;);<br>
+                      para.appendChild(node);<br><br>
+                      const element = document.getElementById(&quot;div1&quot;);<br>
+                      element.appendChild(para);<br>
+                      &lt;/script&gt;
+                      </div></strong>
+                  </th>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div><br>
+
+        <h4 class="font-thin text-center">Ejemplo al ejecutarlo</h4>
+        <div class="">
+            <iframe class="responsive-iframe bg-info" width="700px" height="200px" src="ejemplos/Nodos1Resultado.html" style="border-radius: 5px; border-width: 2px; margin-right: 50%;"></iframe>
+        </div>
+        <br>
+        <header class="section-header">
+          <h3>Ejemplo explicado</h3>
+        </header>
+        <h6 class="font-thin text-center ">Este código crea un nuevo  <span class="font-semibold"><strong>< p></strong></span><span class="font-thin">elemento:</span></h6>
+        <table class="table table-hover table-bordered">
+          <th class="mb-0 text-center"><em><h6>document.getElementById(id).innerHTML = new HTML</h6></em></th>
+        </table>
+
+        <h6 class="font-thin text-center ">Para agregar texto al <span class="font-semibold"><strong>< p></strong></span><span class="font-thin">elemento, primero debe crear un nodo de texto. Este código crea un nodo de texto:</span></h6>
+        <table class="table table-hover table-bordered">
+          <th class="mb-0 text-center"><em><h6>const node = document.createTextNode("This is a new paragraph.");</h6></em></th>
+        </table>
+
+        <h6 class="font-thin text-center ">Luego debe agregar el nodo de texto al <span class="font-semibold"><strong>< p></strong></span><span class="font-thin">elemento:</span></h6>
+        <table class="table table-hover table-bordered">
+          <th class="mb-0 text-center"><em><h6>para.appendChild(node);</h6></em></th>
+        </table>
+
+        <h6 class="font-thin text-center ">Finalmente, debe agregar el nuevo elemento a un elemento existente.</h6>
+        <h6 class="font-thin text-center ">Este código encuentra un elemento existente:</h6>
+        <table class="table table-hover table-bordered">
+          <th class="mb-0 text-center"><em><h6>const element = document.getElementById("div1");</h6></em></th>
+        </table>
+
+        <h6 class="font-thin text-center ">Este código agrega el nuevo elemento al elemento existente:</h6>
+        <table class="table table-hover table-bordered">
+          <th class="mb-0 text-center"><em><h6>element.appendChild(para);</h6></em></th>
+        </table>
+
+      </div>
+
+    </section><!-- End About Us Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="bg-info">
+
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h3>Eliminar elementos HTML existentes</h3>
+          <p>Para eliminar un elemento HTML, use el <span class="font-semibold"><strong>remove()</strong></span> método:</p>
+        </header>
+
+        <div class="row about-cols">
+          <div class="bg-secondary"><br>
+            <table class="table">
+              <thead class="thead-dark" >
+                <tr class="table bg-light">
+                  <th scope="col" class="text-secondary">Ejemplo</th>
+                </tr>
+              </thead>
+              <tbody >
+                <tr>
+                  <th class=" bg-light"><strong>
+                    <div class="w3-code">
+                      &lt;div&gt;<br>
+                      &nbsp;
+                      &lt;p id=&quot;p1&quot;&gt;This is a paragraph.&lt;/p&gt;<br>
+                      &nbsp;
+                      &lt;p id=&quot;p2&quot;&gt;This is another paragraph.&lt;/p&gt;<br>
+                      &lt;/div&gt;<br><br>&lt;script&gt;<br>
+                      const elmnt = document.getElementById(&quot;p1&quot;);
+                      elmnt.remove();<br>
+                      &lt;/script&gt;</div></strong>
+                  </th>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div><br>
+
+        <h4 class="font-thin text-center">Ejemplo al ejecutarlo</h4>
+        <div class="">
+            <iframe class="responsive-iframe bg-light" width="700px" height="200px" src="ejemplos/Nodos3Resultado.html" style="border-radius: 5px; border-width: 2px; margin-right: 50%;"></iframe>
+        </div>
+        <br>
+        <header class="section-header">
+          <h3>Ejemplo explicado</h3>
+        </header>
+          
+        <h6 class="font-thin text-center ">El documento HTML contiene un <span class="font-semibold"><strong>< div></strong></span><span class="font-thin">elemento con dos nodos secundarios (dos </span> <span class="font-semibold"><strong>< p></strong></span><span class="font-thin"> elementos):</span></h6>
+        <table class="table table-hover table-bordered table-dark">
+          <th class="mb-0 text-left"><em><h6>
+            < div><br>
+              &nbsp;&nbsp;&nbsp;< p id="p1">This is a paragraph.< /p><br>
+              &nbsp;&nbsp;&nbsp;< p id="p2">This is another paragraph.< /p><br>
+            < /div>
+            </h6></em>
+          </th>
+        </table>
+
+        <h6 class="font-thin text-center ">Busque el elemento que desea eliminar:</h6>
+        <table class="table table-hover table-bordered table-dark">
+          <th class="mb-0 text-center"><em><h6>const elmnt = document.getElementById("p1");</h6></em></th>
+        </table>
+
+        <h6 class="font-thin text-center ">Luego ejecute el método <strong>remove ()</strong> en ese elemento:</h6>
+        <table class="table table-hover table-bordered table-dark">
+          <th class="mb-0 text-center"><em><h6>elmnt.remove();</h6></em></th>
+        </table>
+
+        <table class="table bg-danger table-bordered table-warning">
+          <th class="mb-0 text-center"><em><h6>El <strong>remove()</strong>método no funciona en navegadores más antiguos, vea el ejemplo a continuación sobre cómo usarlo <strong>removeChild()</strong>.</h6></em></th>
+        </table>
+
+
+      </div>
+
+    </section><!-- End Services Section -->
+
+
+    <!-- ======= Call To Action Section ======= -->
+    <section id="call-to-action"  style="background-image: url(assets/img/imagen5.jpg)">
+      <div class="container " data-aos="zoom-in">
+       <header class="section-header text-center">
+          <h3>Creando nuevos elementos HTML - insertBefore ()</h3>
+           <h5 class="font-thin text-center ">El <span class="font-semibold"><strong>appendChild()</strong></span><span class="font-thin">método del ejemplo anterior agregó el nuevo elemento como último hijo del padre.</span></h5>
+           <h6 class="font-thin text-center ">Si no lo desea, puede usar el <span class="font-semibold"><strong>insertBefore() </strong></span><span class="font-thin">método:</span></h6>
+        </header>
+
+        <div class="row about-cols text-left">
+          <div class="bg-success"><br>
+            <table class="table">
+              <thead class="thead-dark" >
+                <tr class="table bg-light">
+                  <th scope="col" class="text-secondary">Ejemplo</th>
+                </tr>
+              </thead>
+              <tbody class="container text-left">
+                <tr>
+                  <th class=" bg-light" style="margin-right: 500%;" ><strong>
+                    <div class="w3-code">
+                      &lt;div id=&quot;div1&quot;&gt;<br>
+                      &nbsp;
+                      &lt;p id=&quot;p1&quot;&gt;This is a paragraph.&lt;/p&gt;<br>
+                      &nbsp;
+                      &lt;p id=&quot;p2&quot;&gt;This is another paragraph.&lt;/p&gt;<br>
+                      &lt;/div&gt;<br><br>&lt;script&gt;<br>
+                      &nbsp;
+                      const para = document.createElement(&quot;p&quot;);<br>
+                      &nbsp;
+                      const node = document.createTextNode(&quot;This is new.&quot;);<br>
+                      &nbsp;
+                      para.appendChild(node);<br><br>
+                      &nbsp;
+                      const element = document.getElementById(&quot;div1&quot;);<br>
+                      &nbsp;
+                      const child = document.getElementById(&quot;p1&quot;);<br>
+                      &nbsp;
+                      element.insertBefore(para, child);<br>
+                      &lt;/script&gt;</div></strong>
+                  </th>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div><br>
+
+        <h4 class="font-thin text-center"><strong>Ejemplo al ejecutarlo</strong></h4>
+        <div class="">
+            <iframe class="responsive-iframe bg-light" width="700px" height="200px" src="ejemplos/Nodos2Resultado.html" style="border-radius: 5px; border-width: 2px; margin-right: 50%;"></iframe>
+        </div>
+       
+      </div>
+      </div>
+    </section><!-- End Call To Action Section -->
+
+    <!-- ======= Skills Section ======= -->
+    <section id="skills">
+      <div class="container" data-aos="fade-up">
+       <header class="section-header">
+          <h3>Eliminar un nodo secundario</h3>
+          <p>Para los navegadores que no admiten el <span class="font-semibold"><strong>remove()</strong></span>método, debe encontrar el nodo principal para eliminar un elemento:</p>
+        </header>
+
+        <div class="row about-cols">
+          <div class="bg-danger"><br>
+            <table class="table">
+              <thead class="thead-dark" >
+                <tr class="table bg-light">
+                  <th scope="col" class="text-secondary">Ejemplo</th>
+                </tr>
+              </thead>
+              <tbody >
+                <tr>
+                  <th class=" bg-light"><strong>
+                    <div class="w3-code">
+                      &lt;div id=&quot;div1&quot;&gt;<br>
+                      &nbsp;
+                      &lt;p id=&quot;p1&quot;&gt;This is a paragraph.&lt;/p&gt;<br>
+                      &nbsp;
+                      &lt;p id=&quot;p2&quot;&gt;This is another paragraph.&lt;/p&gt;<br>
+                      &lt;/div&gt;<br><br>&lt;script&gt;<br>
+                      const parent = document.getElementById(&quot;div1&quot;);<br>
+                      const child = document.getElementById(&quot;p1&quot;);<br>
+                      parent.removeChild(child);<br>
+                      &lt;/script&gt;</div></strong>
+                  </th>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div><br>
+
+        <h4 class="font-thin text-center">Ejemplo al ejecutarlo</h4>
+        <div class="">
+            <iframe class="responsive-iframe bg-warning" width="700px" height="200px" src="ejemplos/Nodos4Resultado.html" style="border-radius: 5px; border-width: 2px; margin-right: 50%;"></iframe>
+        </div>
+        <br>
+        <header class="section-header">
+          <h3>Ejemplo explicado</h3>
+        </header>
+    
+        <h6 class="font-thin text-center ">Este documento HTML contiene un <span class="font-semibold"><strong>< div></strong></span><span class="font-thin"> elemento con dos nodos secundarios <br>(dos </span><span class="font-semibold"><strong>< p> </strong></span><span class="font-thin">elementos):</span></h6>
+        <table class="table table-hover table-bordered">
+          <th class="mb-0 text-left"><em><h6>
+            < div id="div1"><br>
+             < p id="p1">This is a paragraph.< /p><br>
+             < p id="p2">This is another paragraph.< /p><br>
+            < /div>
+            </h6></em>
+          </th>
+        </table>
+
+        <h6 class="font-thin text-center ">Encuentra el elemento con  <span class="font-semibold"><strong>id="div1":</strong></span></h6>
+        <table class="table table-hover table-bordered">
+          <th class="mb-0 text-center"><em><h6>const parent = document.getElementById("div1");</h6></em></th>
+        </table>
+
+        <h6 class="font-thin text-center ">Encuentra el <span class="font-semibold"><strong>< p></strong></span><span class="font-thin"> elemento con </span><span class="font-semibold"><strong>id="p1":</strong></span></h6>
+        <table class="table table-hover table-bordered">
+          <th class="mb-0 text-center"><em><h6>const child = document.getElementById("p1");</h6></em></th>
+        </table>
+
+        <h6 class="font-thin text-center ">Quitar al niño del padre:.</h6>
+        <table class="table table-hover table-bordered">
+          <th class="mb-0 text-center"><em><h6>parent.removeChild(child);</h6></em></th>
+        </table>
+
+        <h6 class="font-thin text-center ">Aquí hay una solución alternativa común: busque el hijo que desea eliminar y use su <span class="font-semibold"><strong>parentNode</strong></span> propiedad para encontrar al padre:</h6>
+        <table class="table table-hover table-bordered">
+          <th class="mb-0 text-center"><em><h6>
+            const child = document.getElementById("p1");<br>
+            child.parentNode.removeChild(child);</h6></em>
+          </th>
+        </table>
+      </div>
+      </div>
+    </section><!-- End Skills Section -->
+
+    <!-- ======= Facts Section ======= -->
+    <section id="facts">
+      <div class="container " data-aos="zoom-in">
+        <header class="section-header text-center">
+          <h3>Reemplazo de elementos HTML </h3>
+          <h5 class="font-thin text-center ">Para reemplazar un elemento en el DOM HTML, use el <span class="font-semibold"><strong>replaceChild()</strong></span><span class="font-thin">método:</span></h5>
+        </header>
+
+        <div class="row about-cols text-left">
+          <div class="bg-success"><br>
+            <table class="table">
+              <thead class="thead-dark" >
+                <tr class="table bg-light">
+                  <th scope="col" class="text-secondary">Ejemplo</th>
+                </tr>
+              </thead>
+              <tbody class="container text-left">
+                <tr>
+                  <th class=" bg-light" style="margin-right: 500%;" ><strong>
+                    <div class="w3-code notranslate htmlHigh">
+                      &lt;div id=&quot;div1&quot;&gt;<br>
+                      &nbsp;
+                      &lt;p id=&quot;p1&quot;&gt;This is a paragraph.&lt;/p&gt;<br>
+                      &nbsp;
+                      &lt;p id=&quot;p2&quot;&gt;This is another paragraph.&lt;/p&gt;<br>
+                      &lt;/div&gt;<br><br>&lt;script&gt;<br>
+                      const para = document.createElement(&quot;p&quot;);<br>
+                      const node = document.createTextNode(&quot;This is new.&quot;);<br>para.appendChild(node);<br>
+                       <br>const parent = document.getElementById(&quot;div1&quot;);<br>const child = document.getElementById(&quot;p1&quot;);<br>parent.replaceChild(para, child);<br>
+                      &lt;/script&gt;</div>
+                  </strong>
+                  </th>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div><br>
+
+        <h4 class="font-thin text-center"><strong>Ejemplo al ejecutarlo</strong></h4>
+        <div class="">
+            <iframe class="responsive-iframe bg-info" width="700px" height="200px" src="ejemplos/Nodos5Resultado.html" style="border-radius: 5px; border-width: 2px; margin-right: 50%;"></iframe>
+        </div>
+      </div>
+    </section><!-- End Facts Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6 footer-info">
+            <h3>Portal Grupo 8</h3>
+            <p>El grupo ocho da a conocer mediante este portal una serie de conceptos y ejemplos de JavaScript HTML DOM Avanzado.</p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Enlaces</h4>
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Inicio</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#blog">Conceptos</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#servicesE">Ejemplos</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-contact">
+            <h4>Contáctanos</h4>
+            <p>
+              Sangolquí<br>
+              Ecuador<br>
+              <br>
+              <strong>Teléfono:</strong> 5589 55488 55<br>
+              <strong>Correo electrónico:</strong> grupo8@espe.edu.ec<br>
+            </p>
+
+            <div class="social-links">
+              <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+              <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong>Grupo 8</strong>.Aplicación de  Tecnologías WEB
+      </div>
+      <div class="credits">
+        <!--
+        All the links in the footer should remain intact.
+        You can delete the links only if you purchased the pro version.
+        Licensing information: https://bootstrapmade.com/license/
+        Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=BizPage
+      -->
+        Tarea 2 - Segundo Parcial</div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <!-- Uncomment below i you want to use a preloader -->
+  <!-- <div id="preloader"></div> -->
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body style="background-color: #CCEFFB;">
+
+<h2>JavaScript HTML Events</h2>
+<p>Haga click en el botón para mostrar la fecha.</p>
+
+<button onclick="displayDate()">La hora es?</button>
+
+<script>
+function displayDate() {
+  document.getElementById("demo").innerHTML = Date();
+}
+</script>
+
+<p id="demo"></p>
+
+</body>
+</html> 

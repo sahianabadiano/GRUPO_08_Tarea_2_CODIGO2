@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>JS DOM-Events Listener</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+ <link href="assets/img/ocho.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: BizPage - v5.8.0
+  * Template URL: https://bootstrapmade.com/bizpage-bootstrap-business-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+<!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center ">
+    <div class="container-fluid">
+
+      <div class="row justify-content-center align-items-center">
+        <div class="col-xl-11 d-flex align-items-center justify-content-between">
+          <h1 class="logo"><a href="index.html"><img src="assets/img/grupo8.png"></a></h1>
+          <!-- Uncomment below if you prefer to use an image logo -->
+          <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+          <nav id="navbar" class="navbar">
+            <ul>
+              
+              <!--<li><a class="nav-link scrollto " href="index.html">Inicio</a></li>
+              <li><a class="nav-link scrollto" href="#blog">Conceptos</a></li>
+              <li><a class="nav-link scrollto" href="#servicesE">Ejemplos</a></li>-->
+              <li class="dropdown"><a href="#"><span>Escucha de eventos DOM</span> <i class="bi bi-chevron-down"></i></a>
+                <ul>
+                  <li><a href="#blog">Conceptos</a></li>
+                  <li><a href="#blog">Ejemplos</a></li>
+                </ul>
+              </li>
+              <li class="active" style="padding-top: 2%;"><span><a href="index.html"><i class="bi bi-house-fill" style="font-size: 35px;"></i></a></span></li>
+            </ul>
+
+            <i class="bi bi-list mobile-nav-toggle"></i>
+          </nav><!-- .navbar -->
+        </div>
+      </div>
+
+    </div>
+  </header><!-- End Header -->
+  
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+
+       <h2>EventListener de DOM HTML de JavaScript</h2>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <!-- ======= Blog Single Section ======= -->
+    <section id="blog" class="blog">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+
+          <div class="col-lg-10 entries">
+
+            <article class="entry entry-single">
+
+              <img src="assets/img/Evento.JPG" alt="" height="50px" class="img-fluid"><br><br>
+              <div class="entry-img">
+                
+              </div>
+
+              <h2 class="entry-title">
+                <a href="blog-single.html">JS HTML DOM Events Listener</a>
+              </h2>
+
+              <div class="entry-meta">
+                <ul>
+                  <li class="d-flex align-items-center"><i class="bi bi-person"></i> <a href="blog-single.html">Grupo
+                      8</a></li>
+                  <li class="d-flex align-items-center"><i class="bi bi-clock"></i> <a href="blog-single.html"><time
+                        datetime="2020-01-01">Diciembre, 2021</time></a></li>
+                </ul>
+              </div>
+
+              <div class="entry-content">
+                <h2>El método addEventListener ()</h2>
+                <p>
+                  Agregue un detector de eventos que se activa cuando un usuario hace clic en un botón:
+                </p>
+
+                <table class="table table-bordered">
+                  <th class="mb-0 blockquote text-center"><em>
+                      <h4>document.getElementById("myBtn").addEventListener("click", displayDate);</h4>
+                    </em></th>
+                </table>
+
+                <P>El addEventListener()método adjunta un controlador de eventos al elemento especificado.</P>
+
+                <p>El addEventListener()método adjunta un controlador de eventos a un elemento sin sobrescribir los controladores de eventos existentes.</p>
+
+                <p>Cuando se utiliza el addEventListener()método, JavaScript se separa del marcado HTML, para una mejor legibilidad y le permite agregar detectores de eventos incluso cuando no controla el marcado HTML.</p>
+
+                <h3>Sintaxis</h3>
+
+                <table class="table table-bordered">
+                  <th class="mb-0 blockquote text-center"><em>
+                      <h4>element.addEventListener(event, function, useCapture);</h4>
+                    </em></th>
+                </table>
+
+                <p>El primer parámetro es el tipo de evento (como " click" o " mousedown" o cualquier otro evento DOM de HTML ).</p>
+
+                <p>El segundo parámetro es la función que queremos llamar cuando ocurre el evento.</p>
+
+                <p>El tercer parámetro es un valor booleano que especifica si se utilizará el burbujeo de eventos o la captura de eventos. Este parámetro es opcional.</p>
+
+              <div class="entry-footer">
+                <i class="bi bi-folder"></i>
+                <ul class="cats">
+                  <li><a href="#">Aplicacion web</a></li>
+                </ul>
+              </div>
+            </article><!-- End blog entry -->
+
+            <article class="entry entry-single">
+              <h2 class="entry-title">
+                <a href="blog-single.html">Ejemplos JS HTML DOM Event-Listener</a>
+              </h2>
+
+
+              <div class="entry-content">
+                <h3>1. Agregar un controlador de eventos a un elemento</h3>
+                <p>
+                  Se puede acceder al valor del nodo de texto mediante la innerHTML propiedad del nodo :
+                </p>
+
+                <h4>Codigo Ejemplo</h4>
+
+                <table class="table  table-bordered table-striped ">
+                  <thead>
+                    <tr class="table-success">
+                      <th scope="col">Ejemplo</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th class="text-primary bg-info"><strong>
+                        < html><br>
+                        < body><br><br>
+
+                        < h2>JavaScript addEventListener()< /h2><br><br>
+
+                        < p>This example uses the addEventListener() method to attach a click event to a button.< /p><br><br>
+
+                        < button id="myBtn">Try it< /button><br><br>
+
+                        < script><br>
+                        document.getElementById("myBtn").addEventListener("click", function() {<br>
+                          alert("Hello World!");<br>
+                        });<br>
+                        < /script><br><br>
+
+                        < /body><br>
+                        < /html>
+                      </th>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <!-- /row -->
+                <br>
+                <p align="left" class="font-thin ">Esta es la manera en que podemos visualizar nuestro ejemplo al
+                  ejecutarlo</p>
+                <br>
+                <div class="bg-info">
+                  <iframe class="responsive-iframe" width="700px" height="200px" src="ejemplos/ejemEVEN1.html"
+                    style="border-radius: 5px; border-width: 2px; margin-right: 50%;"></iframe>
+                </div>
+              </div>
+
+              <div class="entry-content">
+                <h3>2. Agregar muchos controladores de eventos al mismo elemento</h3>
+                <p>
+                  El addEventListener()método le permite agregar muchos eventos al mismo elemento, sin sobrescribir los eventos existentes:
+                </p>
+
+                <table class="table table-bordered">
+                  <th class="mb-0 blockquote text-center"><em>
+                      <h4>element.addEventListener("mouseover", myFunction);<br><br>
+                        element.addEventListener("click", mySecondFunction);<br><br>
+                        element.addEventListener("mouseout", myThirdFunction);<br></h4>
+                    </em></th>
+                </table>
+
+                <h4>Codigo Ejemplo</h4>
+
+                <table class="table  table-bordered table-striped ">
+                  <thead>
+                    <tr class="table-success">
+                      <th scope="col">Ejemplo</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th class="text-primary bg-info"><strong>
+                        < html><br>
+                        < body><br><br>
+
+                        < h1 id="id01">My First Page< /h1><br>
+                        < p id="id02">< /p><br><br>
+
+                        < script><br>
+                          document.getElementById("id02").innerHTML = document.getElementById("id01").firstChild.nodeValue;<br>
+                        < /script><br><br>
+
+                        < /body><br>
+                        < /html>
+                      </th>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <!-- /row -->
+                <br>
+                <p align="left" class="font-thin ">Esta es la manera en que podemos visualizar nuestro ejemplo al
+                  ejecutarlo</p>
+                <br>
+                <div class="bg-info">
+                  <iframe class="responsive-iframe" width="700px" height="200px" src="ejemplos/ejemEVEN2.html"
+                    style="border-radius: 5px; border-width: 2px; margin-right: 50%;"></iframe>
+                </div>
+              </div>
+
+              <div class="entry-content">
+                <h3>3. Agregar un controlador de eventos al objeto de la ventana</h3>
+                <p>
+                  El addEventListener()método le permite agregar detectores de eventos en cualquier objeto DOM de HTML, como elementos HTML, el documento HTML, el objeto de ventana u otros objetos que admitan eventos, como el xmlHttpRequestobjeto.</p>
+
+                <table class="table table-bordered">
+                  <th class="mb-0 blockquote text-center"><em>
+                      <h4>window.addEventListener("resize", function(){<br>
+                        document.getElementById("demo").innerHTML = sometext;<br>
+                      });</h4>
+                    </em></th>
+                </table>
+
+                <h4>Codigo Ejemplo</h4>
+
+                <table class="table  table-bordered table-striped ">
+                  <thead>
+                    <tr class="table-success">
+                      <th scope="col">Ejemplo</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th class="text-primary bg-info"><strong>
+                        < !DOCTYPE html><br>
+                        < html><br>
+                        < body><br><br>
+
+                        < h2>JavaScript addEventListener()< /h2><br><br>
+
+                        < p>This example uses the addEventListener() method on the window object.< /p><br><br>
+
+                        < p>Try resizing this browser window to trigger the "resize" event handler.< /p><br><br>
+
+                        < p id="demo">< /p><br><br>
+
+                        < script><br>
+                        window.addEventListener("resize", function(){<br>
+                          document.getElementById("demo").innerHTML = Math.random();<br>
+                        });<br>
+                        < /script><br><br>
+
+                        < /body><br>
+                        < /html><br>
+                      </th>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <!-- /row -->
+                <br>
+                <p align="left" class="font-thin ">Esta es la manera en que podemos visualizar nuestro ejemplo al
+                  ejecutarlo</p>
+                <br>
+                <div class="bg-info">
+                  <iframe class="responsive-iframe" width="700px" height="200px" src="ejemplos/ejemEVEN3.html"
+                    style="border-radius: 5px; border-width: 2px; margin-right: 50%;"></iframe>
+                </div>
+              </div>
+
+              <div class="entry-content">
+                <h3>4. Pasar parámetros</h3>
+                <p>
+                  Al pasar valores de parámetros, utilice una "función anónima" que llame a la función especificada con los parámetros:
+                </p>
+                
+                <table class="table table-bordered">
+                  <th class="mb-0 blockquote text-center"><em>
+                      <h4>element.addEventListener("click", function(){ myFunction(p1, p2); });</h4>
+                    </em></th>
+                </table>
+
+                <h4>Codigo Ejemplo</h4>
+
+                <table class="table  table-bordered table-striped ">
+                  <thead>
+                    <tr class="table-success">
+                      <th scope="col">Ejemplo</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th class="text-primary bg-info"><strong>
+                        < !DOCTYPE html><br>
+                        < html><br>
+                        < body><br><br>
+
+                        < h2>JavaScript addEventListener()< /h2><br><br>
+
+                        < p>This example demonstrates how to pass parameter values when using the addEventListener() method.< /p><br><br>
+
+                        < p>Click the button to perform a calculation.< /p><br><br>
+
+                        < button id="myBtn">Try it< /button><br><br>
+
+                        < p id="demo">< /p><br><br>
+
+                        < script><br>
+                        let p1 = 5;<br>
+                        let p2 = 7;<br>
+                        document.getElementById("myBtn").addEventListener("click", function() {<br>
+                          myFunction(p1, p2);<br>
+                        });<br><br>
+
+                        function myFunction(a, b) {<br>
+                          document.getElementById("demo").innerHTML = a * b;<br>
+                        }<br>
+                        < /script><br><br>
+
+                        < /body><br>
+                        < /html>
+                      </th>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <!-- /row -->
+                <br>
+                <p align="left" class="font-thin ">Esta es la manera en que podemos visualizar nuestro ejemplo al
+                  ejecutarlo</p>
+                <br>
+                <div class="bg-info">
+                  <iframe class="responsive-iframe" width="700px" height="200px" src="ejemplos/ejemEVEN4.html"
+                    style="border-radius: 5px; border-width: 2px; margin-right: 50%;"></iframe>
+                </div>
+              </div>
+
+              <div class="entry-content">
+                <h3>5. El método removeEventListener ()</h3>
+                <p>
+                  El removeEventListener()método elimina los controladores de eventos que se han adjuntado con el método addEventListener ():
+                </p>
+
+                <table class="table table-bordered">
+                  <th class="mb-0 blockquote text-center"><em>
+                      <h4>element.removeEventListener("mousemove", myFunction);</h4>
+                    </em></th>
+                </table>             
+                
+                <h4>Codigo Ejemplo</h4>
+
+                <table class="table  table-bordered table-striped ">
+                  <thead>
+                    <tr class="table-success">
+                      <th scope="col">Ejemplo</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th class="text-primary bg-info"><strong>
+                        < !DOCTYPE html><br>
+                        < html><br>
+                        < head><br>
+                          < style><br>
+                          #myDIV {<br>
+                            background-color: coral;<br>
+                            border: 1px solid;<br>
+                            padding: 50px;<br>
+                            color: white;<br>
+                            font-size: 20px;<br>
+                          }<br>
+                          < /style><br>
+                          < /head><br>
+                          < body><br><br>
+                          
+                          < h2>JavaScript removeEventListener()</h2><br><br>
+                          
+                          < div id="myDIV"><br>
+                            < p>This div element has an onmousemove event handler that displays a random number every time you move your mouse inside this orange field.</p><br>
+                            < p>Click the button to remove the div's event handler.< /p><br>
+                            < button onclick="removeHandler()" id="myBtn">Remove< /button><br>
+                          < /div><br><br>
+                          
+                          < p id="demo">< /p><br><br>
+                          
+                          < script><br>
+                          document.getElementById("myDIV").addEventListener("mousemove", myFunction);<br><br>
+                          
+                          function myFunction() {<br>
+                            document.getElementById("demo").innerHTML = Math.random();<br>
+                          }<br><br>
+                          
+                          function removeHandler() {<br>
+                            document.getElementById("myDIV").removeEventListener("mousemove", myFunction);<br>
+                          }<br>
+                          < /script><br><br>
+
+                        < /body><br>
+                        < /html>
+                      </th>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <!-- /row -->
+                <br>
+                <p align="left" class="font-thin ">Esta es la manera en que podemos visualizar nuestro ejemplo al
+                  ejecutarlo</p>
+                <br>
+                <div class="bg-info">
+                  <iframe class="responsive-iframe" width="670px" height="500px" src="ejemplos/ejemEVEN5.html"
+                    style="border-radius: 5px; border-width: 2px; margin-right: 50%;"></iframe>
+                </div>
+              </div>
+            </article><!-- End blog entry -->
+            
+        </div>
+
+      </div>
+    </section><!-- End Blog Single Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6 footer-info">
+            <h3>Portal Grupo 8</h3>
+            <p>El grupo ocho da a conocer mediante este portal una serie de conceptos y ejemplos de JavaScript HTML DOM Avanzado.</p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Enlaces</h4>
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Inicio</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#blog">Conceptos</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#servicesE">Ejemplos</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-contact">
+            <h4>Contáctanos</h4>
+            <p>
+              Sangolquí<br>
+              Ecuador<br>
+              <br>
+              <strong>Teléfono:</strong> 5589 55488 55<br>
+              <strong>Correo electrónico:</strong> grupo8@espe.edu.ec<br>
+            </p>
+
+            <div class="social-links">
+              <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+              <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong>Grupo 8</strong>.Aplicación de  Tecnologías WEB
+      </div>
+      <div class="credits">
+        <!--
+        All the links in the footer should remain intact.
+        You can delete the links only if you purchased the pro version.
+        Licensing information: https://bootstrapmade.com/license/
+        Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=BizPage
+      -->
+        Tarea 2 - Segundo Parcial</div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+  <!-- Uncomment below i you want to use a preloader -->
+  <!-- <div id="preloader"></div> -->
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

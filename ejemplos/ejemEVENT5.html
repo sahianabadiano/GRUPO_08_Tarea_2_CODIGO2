@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body style="background-color: #CCEFFB;">
+
+<h2>JavaScript HTML Events</h2>
+Ingrese su nombre: <input type="text" id="fname" onchange="upperCase()">
+<p>Cuando abandona el campo de entrada, se activa una función que transforma el texto de entrada a mayúsculas.</p>
+
+<script>
+function upperCase() {
+  const x = document.getElementById("fname");
+  x.value = x.value.toUpperCase();
+}
+</script>
+
+</body>
+</html>

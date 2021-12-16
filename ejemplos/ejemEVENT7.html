@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body style="background-color: #CCEFFB;">
+
+<div onmousedown="mDown(this)" onmouseup="mUp(this)"
+style="background-color:#85D4B0;width:150px;height:20px;padding:40px;">
+Haga click sobre mí</div>
+
+<script>
+function mDown(obj) {
+  obj.style.backgroundColor = "#1ec5e5";
+  obj.innerHTML = "Haga clic sobre mí";
+}
+
+function mUp(obj) {
+  obj.style.backgroundColor="#85D4B0";
+  obj.innerHTML="Gracias !!!";
+}
+</script>
+
+</body>
+</html> 

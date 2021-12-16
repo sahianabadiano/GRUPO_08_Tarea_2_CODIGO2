@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body onload="checkCookies()" style="background-color: #CCEFFB;">
+
+<h2>JavaScript HTML Events</h2>
+
+<p id="demo"></p>
+
+<script>
+function checkCookies() {
+  var text = "";
+  if (navigator.cookieEnabled == true) {
+    text = "Las cookies estan habilitadas.";
+  } else {
+    text = "Las cookies  no estan habilitadas.";
+  }
+  document.getElementById("demo").innerHTML = text;
+}
+</script>
+
+</body>
+</html> 
